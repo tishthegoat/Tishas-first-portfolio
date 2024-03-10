@@ -1,0 +1,38 @@
+to view a potential employee's portfolio to review samples of their work.
+
+
+FIRST: write content and draw up a draft
+--skeleton in process--
+Tisha Parry
+	"starting now!"
+
+
+recent photo/avatar, maybe take one tomorrow or animals or avatar
+
+nav(about work contact)-must direct to below sections
+
+
+	about
+My name is Tisha Parry I have lived in Utah most of my life, but have ventured to live in Idaho and Alaska for some short periods of time.
+I have worked in SEO. I work at the Remote Encoding Center for the USPS as a data conversion clerk. We decipher and code addresses and names that the computers are not able to read (like cursive). I love to create. I have crocheted for 20+ years, and I am ready to start creating digitally. Right now I am a blank slate, curious about all aspects of web design and can't wait to see what peaks my interest, and really dive deep into. When I'm not creating, I like to be outside disc golfing, hiking with my dogs, and traveling for food, sights, and culture. Feel free to check out my work, and be sure to check back often for all my new projects. I plan on there being many!
+
+
+	work
+Challenge 1-deployed!
+Mini 2-need to deploy
+threaded goat insta https://www.instagram.com/threaded_goat/ "crocheted works"
+
+
+	contact
+Salt Lake image? 
+IG (https://www.instagram.com/tishthegoat) 
+GH (https://github.com/tishthegoat) 
+LI(https://www.linkedin.com/in/tisha-parry-91301483)
+EM (tishthegoat@gmail.com)
+
+
+
+link about work scrolls to a section with titled images of apps (anchor to picture)
+1st app's image should be largest(grid? or percentage)
+clicking on a work will lead to deployed page (another deployed application)
+responsive layout (media query)
