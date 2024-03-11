@@ -9,6 +9,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+h2, h3, h4, h5, h6 {
+	font-family: Verdana,Geneva,sans-serif;
+}
+
 
 /* Style the header */
 header {
@@ -54,13 +58,11 @@ main{
 
 
 
-main section img{
-	width: 10%;
-	height: auto;
-}
+
 
 h1{
 	font-size: 50px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h2{
@@ -75,16 +77,41 @@ h4{
 	font-size: 20px;
 }
 
+h4 a{
+	text-decoration: none;
+}
+
 h5{
 	font-size: 10px;
 }
 
 section{
 	padding: 20px;
+	flex: 1 0 10px;
 }
+
+
+.flexing{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+
 p {
     line-height: 1.5;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	flex-basis: 75%;
+	padding-right: 2px;
+		
 }
+
+main section img{
+	width: 10%;
+	height: fit-content;
+	padding: 2px;
+	flex-basis: 10%;
+}
+
 
 footer{
 	background-color: orangered;
@@ -92,11 +119,15 @@ footer{
 	text-align: center;
 
 }
+
+
 /* not working, come back to it later */
 footer:hover{
 	transition:20% ease-in-out;
 }
 /* just this part */
+
+
 footer h5::before{
 	content:"😏";
 }
@@ -109,8 +140,28 @@ footer h5::after{
 	display: flex;
 	flex: 3 1 100%;
 } */
+/* .works{
+	font-family:  "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+} */
 
 .works img{
 	width: auto;
 	height: auto;
- }
+}
+
+.titles{
+	font-family: Andale Mono,AndaleMono,monospace; 
+}
+
+
+p, main section img {
+	flex: 1;
+}
+
+p, main section img :first-child {
+	flex: 5 0 50%;
+}
+ /* this was tough */
+p, main section img:nth-child(3) {
+	align-self:center;
+}
