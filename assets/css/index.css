@@ -111,7 +111,30 @@ main section img{
 	padding: 2px;
 	flex-basis: 10%;
 }
+/* 
+<!--article{
+	display: flex;
+	flex-flow: column;
+	flex: 1 0 10px;
+	align-items: start;
+}
 
+div {
+	width: 25%;
+	height:auto;
+}
+
+div:first-child{
+	width: 50%;
+	height: auto;
+} */
+
+article{
+	display: grid;
+	grid-template-columns: repeat(auto-fit);
+
+
+}
 
 footer{
 	background-color: orangered;
@@ -136,23 +159,10 @@ footer h5::after{
 	content: "🤖"
 }
 
-/* .works {
-	display: flex;
-	flex: 3 1 100%;
-} */
-/* .works{
-	font-family:  "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-} */
-
-.works img{
-	width: auto;
-	height: auto;
-}
 
 .titles{
 	font-family: Andale Mono,AndaleMono,monospace; 
 }
-
 
 p, main section img {
 	flex: 1;
