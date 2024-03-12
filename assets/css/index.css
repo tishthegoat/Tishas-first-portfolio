@@ -1,14 +1,14 @@
-
+/* all of it */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* font for the whole body */
 body {
     font-family: Arial, sans-serif;
 }
-
+/* all headers besides my name in the header */
 h2, h3, h4, h5, h6 {
 	font-family: Verdana,Geneva,sans-serif;
 }
@@ -23,27 +23,28 @@ header {
 
 }
 
+/* my pic in the header */
 header img{
 	width: 15%;
 	height: auto;	
 }
-
+/* nav list set up */
 nav ul {
     list-style: none;
 	padding: 30px;
 }
-
+/* list items in nav */
 nav ul li {
     display: inline;
     margin-right: 10px;
 }
-
+/* nav list anchors */
 nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
 }
-
+/* everything besides the header and footer */
 main{
 	background: url(../images/clark-van-der-beken-zKnQnyARggY-unsplash.jpg);
 	background-position: top;
@@ -55,16 +56,12 @@ main{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
-
-
-
+/* name */
 h1{
 	font-size: 50px;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
+/* sizes for headers */
 h2{
 	font-size: 40px;
 }
@@ -84,17 +81,46 @@ h4 a{
 h5{
 	font-size: 10px;
 }
-
+/* about me */
 section{
 	padding: 20px;
 	flex: 1 0 10px;
 }
-
-
+/* images of pets */
+main section img{
+	width: 10%;
+	height: fit-content;
+	padding: 2px;
+	flex-basis: 10%;
+}
+/*flex layout for p and images of pets*/
 .flexing{
 	display: flex;
 	flex-flow: row wrap;
 }
+/* ----this is where i'm at for comparing elements to html */
+article{
+	width: 80%;
+	height: auto;
+	display: grid;
+	gap: 1rem;	
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+/* where i left off */
+
+
+
+.card:first-child{
+	grid-row: span 1/2;
+}
+
 
 
 p {
@@ -105,36 +131,15 @@ p {
 		
 }
 
-main section img{
-	width: 10%;
-	height: fit-content;
-	padding: 2px;
-	flex-basis: 10%;
-}
+
+
 /* 
-<!--article{
-	display: flex;
-	flex-flow: column;
-	flex: 1 0 10px;
-	align-items: start;
-}
-
-div {
-	width: 25%;
-	height:auto;
-}
-
-div:first-child{
-	width: 50%;
-	height: auto;
-} */
-
 article{
 	display: grid;
 	grid-template-columns: repeat(auto-fit);
 
 
-}
+} */
 
 footer{
 	background-color: orangered;
