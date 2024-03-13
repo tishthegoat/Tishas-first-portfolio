@@ -10,16 +10,47 @@ body {
 }
 /* all headers besides my name in the header */
 h2, h3, h4, h5, h6 {
+	font-weight: bolder;
+	color: #be3e31;
 	font-family: Verdana,Geneva,sans-serif;
+}
+
+a{
+ text-shadow: 2px 2px 5px #00829d;
+ transition: transform .3s ease;
+}
+img{
+	border-radius: 25px;
+	border-color: #be3e31;
+	border-style: ridge;
+	border-width: 5px;
+}
+
+hr{
+	margin: 0 auto;
+    background-color:#febd00;
+	border:none;
+	border-radius: 25px;
+    height: 20px;
+    width: 80%;
+}
+
+a:hover{
+	font-size: 20px;
+}
+
+a:hover img{
+	transform: scale(1.1);
 }
 
 
 /* Style the header */
 header {
-	background-color: darkolivegreen;
+	background-color: #2b7146;
     color: #fff;
     padding: 30px;
     text-align: center;
+
 
 }
 
@@ -30,11 +61,10 @@ header img{
 }
 /* nav list set up */
 nav ul {
-    list-style: none;
 	padding: 30px;
 }
 /* list items in nav */
-nav ul li {
+li {
     display: inline;
     margin-right: 10px;
 }
@@ -43,6 +73,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
+	
 }
 /* everything besides the header and footer */
 main{
@@ -86,66 +117,73 @@ section{
 	padding: 20px;
 	flex: 1 0 10px;
 }
+/* only used in first section, so far, might replace h4 in articles*/
+p {
+    line-height: 1.5;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	flex-basis: 75%;
+	padding-right: 2px;
+}
 /* images of pets */
-main section img{
+.pets{
 	width: 10%;
 	height: fit-content;
 	padding: 2px;
 	flex-basis: 10%;
+	border-radius: 25px;
 }
 /*flex layout for p and images of pets*/
 .flexing{
 	display: flex;
 	flex-flow: row wrap;
 }
-/* ----this is where i'm at for comparing elements to html */
-article{
-	width: 80%;
-	height: auto;
-	display: grid;
-	gap: 1rem;	
-}
-
-.card{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 100%;
+/* container for works */
+.works{
 	width: 100%;
-}
-/* where i left off */
-
-
-
-.card:first-child{
-	grid-row: span 1/2;
-}
-
-
-
-p {
-    line-height: 1.5;
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-	flex-basis: 75%;
-	padding-right: 2px;
-		
-}
-
-
-
-/* 
-article{
+	height:auto;
 	display: grid;
-	grid-template-columns: repeat(auto-fit);
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: auto;
+	gap: 1rem;
+	justify-items: center;
+}
+/* used on "featured works" to center header2 */
+#center{
+	text-align: center;
+}
+/* grid setups */
+#pic1{
+	grid-column: 1/3;
+	grid-row: 1;
+	z-index: 2;
+}
 
+#pic2{
+	grid-column: 1;
+	grid-row: 2;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	z-index: 3;
+}
 
-} */
+#pic3{
+	grid-column: 2;
+	grid-row: 2;
+	height: 100%;
+	width: auto;
+	object-fit: cover;
+	z-index: 4;
+}
+/* pushing contact me and links to the right */
+#right{
+	text-align: right;
+}
 
 footer{
 	background-color: orangered;
 	color: #fff;
 	text-align: center;
-
 }
 
 
@@ -164,11 +202,12 @@ footer h5::after{
 	content: "🤖"
 }
 
-
+/* font family for nav and where navs click to(articles in 2nd section */
 .titles{
 	font-family: Andale Mono,AndaleMono,monospace; 
 }
 
+/* images of pets ordered, but not sure about the flex numbers */
 p, main section img {
 	flex: 1;
 }
@@ -176,7 +215,7 @@ p, main section img {
 p, main section img :first-child {
 	flex: 5 0 50%;
 }
- /* this was tough */
+ /* this was tough, acts weird with screen downsizing */
 p, main section img:nth-child(3) {
 	align-self:center;
 }
