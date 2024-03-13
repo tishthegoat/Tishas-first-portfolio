@@ -18,6 +18,8 @@ h2, h3, h4, h5, h6 {
 a{
  text-shadow: 2px 2px 5px #00829d;
  transition: transform .3s ease;
+ color: darkkhaki;
+ text-decoration: none;
 }
 img{
 	border-radius: 25px;
@@ -26,21 +28,13 @@ img{
 	border-width: 5px;
 }
 
-hr{
-	margin: 0 auto;
-    background-color:#febd00;
-	border:none;
-	border-radius: 25px;
-    height: 20px;
-    width: 80%;
-}
 
 a:hover{
 	font-size: 20px;
 }
 
 a:hover img{
-	transform: scale(1.1);
+	transform: scale(.7);
 }
 
 
@@ -48,10 +42,7 @@ a:hover img{
 header {
 	background-color: #2b7146;
     color: #fff;
-    padding: 30px;
-    text-align: center;
-
-
+    padding: 0px;
 }
 
 /* my pic in the header */
@@ -62,16 +53,16 @@ header img{
 /* nav list set up */
 nav ul {
 	padding: 30px;
+	justify-content: end;
 }
 /* list items in nav */
 li {
-    display: inline;
+	display: inline;
     margin-right: 10px;
 }
 /* nav list anchors */
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+	color: #fff;
     padding: 5px 10px;
 	
 }
@@ -82,7 +73,7 @@ main{
 	background-repeat: no-repeat;
 	background-size: cover;
     max-width: 100%;
-    margin: 20px auto;
+    margin:5px auto;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -105,24 +96,29 @@ h4{
 	font-size: 20px;
 }
 
-h4 a{
-	text-decoration: none;
-}
-
 h5{
 	font-size: 10px;
 }
 /* about me */
 section{
-	padding: 20px;
+	padding:0px;
 	flex: 1 0 10px;
 }
 /* only used in first section, so far, might replace h4 in articles*/
 p {
-    line-height: 1.5;
+	line-height: 1.5;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	flex-basis: 75%;
 	padding-right: 2px;
+}
+
+hr{
+	margin: 0 auto;
+	background-color:#febd00;
+	border:none;
+	border-radius: 25px;
+	height: 20px;
+	width: 80%;
 }
 /* images of pets */
 .pets{
