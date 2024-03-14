@@ -43,6 +43,13 @@ header {
 	background-color: #2b7146;
     color: #fff;
     padding: 0px;
+	max-height: 300px;
+}
+
+header p {position: absolute;
+	color:firebrick;
+	top:250px;
+	left: 50%;
 }
 
 /* my pic in the header */
@@ -62,8 +69,11 @@ li {
 }
 /* nav list anchors */
 nav ul li a {
+	display: grid;
+	grid-template-columns: 25px 100px;
 	color: #fff;
     padding: 5px 10px;
+	justify-content: end;
 	
 }
 /* everything besides the header and footer */
