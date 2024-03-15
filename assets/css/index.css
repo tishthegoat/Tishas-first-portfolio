@@ -6,6 +6,10 @@
 }
 /* font for the whole body */
 body {
+	background: url(../images/clark-van-der-beken-zKnQnyARggY-unsplash.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
     font-family: Arial, sans-serif;
 }
 /* all headers besides my name in the header */
@@ -40,27 +44,31 @@ a:hover img{
 
 /* Style the header */
 header {
-	background-color: #2b7146;
     color: #fff;
     padding: 0px;
 	max-height: 300px;
+	position: relative;
 }
 
 header p {position: absolute;
 	color:firebrick;
 	top:250px;
-	left: 50%;
+	left: 40%;
 }
 
 /* my pic in the header */
 header img{
 	width: 15%;
-	height: auto;	
+	height: auto;
+
 }
 /* nav list set up */
 nav ul {
-	padding: 30px;
-	justify-content: end;
+	align-items: start;
+	padding: 0;
+	position: absolute;
+	left:90%;
+	top: 2%;
 }
 /* list items in nav */
 li {
@@ -78,10 +86,6 @@ nav ul li a {
 }
 /* everything besides the header and footer */
 main{
-	background: url(../images/clark-van-der-beken-zKnQnyARggY-unsplash.jpg);
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
     max-width: 100%;
     margin:5px auto;
     padding: 20px;
